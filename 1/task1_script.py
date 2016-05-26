@@ -19,11 +19,9 @@ for i in text_file:
       all_text = all_text + f.read()
     except:
       print i
+      
 stm = Stemmer('russian')
 text = stm.stemWords(regexp_tokenize((all_text.decode('UTF-8')).lower(), r"(?x) \w+ | \w+(-\w+)*"))
 for i in text:
     num = text.count(i)
     print i.encode('UTF - 8'), " ", num
-
-      
-
