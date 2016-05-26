@@ -43,10 +43,3 @@ def map_func(func, list):
 
 list2 = [2, 2]
 print map_func(func_mult, list2) 
-
-
-
-
-
-
-
